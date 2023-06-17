@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap');
-
+@media screen and (max-width:768px) {
 :root {
   --bg-color: #ffffff;
   --button-color: #326589;
@@ -163,13 +163,4 @@ body {
 .redesSociais{
   display: flex;
   justify-content:space-between;
-}
-
-/* Estilos padrão para telas maiores */
-/* ... */
-
-/* Estilos para telas menores (dispositivos móveis) */
-@media screen and (max-width: 767px) {
-  /* Estilos específicos para dispositivos móveis */
-  /* ... */
 }
