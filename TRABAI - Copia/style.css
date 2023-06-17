@@ -189,7 +189,7 @@ body {
 
         .wrap {
           max-width: 100%;
-          padding: 15px;
+          padding: 13px;
           box-sizing: border-box;
         }
 
@@ -267,15 +267,15 @@ body {
 
         .livro__descricao {
           text-align: center;
-          font-size: 18px;
+          font-size: 15px;
           color: var(--text-author-color);
           margin: 1rem 0;
         }
 
         .livro__preco {
           text-align: center;
-          font-size: 20px;
-          font-weight: 700;
+          font-size: 15px;
+          font-weight: 600;
           color: var(--text-price-color);
         }
 
