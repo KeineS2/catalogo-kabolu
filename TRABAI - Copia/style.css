@@ -284,3 +284,8 @@ body {
           flex-wrap: wrap;
           justify-content: start;
           margin
+  .livros__disponiveis p {
+  color: #fff;
+  font-weight: 200;
+  line-height: 12px;
+  font-size: 1em;
