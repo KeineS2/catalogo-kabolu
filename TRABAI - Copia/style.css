@@ -165,3 +165,11 @@ body {
   justify-content:space-between;
 }
 
+/* Estilos padrão para telas maiores */
+/* ... */
+
+/* Estilos para telas menores (dispositivos móveis) */
+@media screen and (max-width: 767px) {
+  /* Estilos específicos para dispositivos móveis */
+  /* ... */
+}
