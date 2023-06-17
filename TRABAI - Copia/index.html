@@ -209,3 +209,73 @@
 
 </html>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .floating-feedback {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .feedback-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #337ab7;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .feedback-button:hover {
+      background-color: #23527c;
+    }
+  </style>
+</head>
+<body>
+  <button id="feedbackButton" class="feedback-button"> DEIXE SEU COMENTÁRIO 😃😃 </button>
+
+  <div id="feedbackForm" class="floating-feedback" style="display: none;">
+    <h3>Deixe sua opinião</h3>
+    <form>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" required>
+      <br><br>
+      <label for="comment">Comentário:</label>
+      <textarea id="comment" required></textarea>
+      <br><br>
+      <input type="submit" value="Enviar" class="feedback-button">
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('feedbackButton').addEventListener('click', function() {
+      document.getElementById('feedbackForm').style.display = 'block';
+    });
+
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value;
+      var comment = document.getElementById('comment').value;
+
+      // Aqui você pode adicionar o código para processar e armazenar as opiniões
+      console.log('Nome:', name);
+      console.log('Comentário:', comment);
+
+      // Resetar o formulário e ocultar o feedback
+      document.querySelector('form').reset();
+      document.getElementById('feedbackForm').style.display = 'none';
+      alert('Obrigado pela sua opinião!');
+    });
+  </script>
+</body>
+</html>
+
+
