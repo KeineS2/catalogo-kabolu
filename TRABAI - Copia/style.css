@@ -162,8 +162,7 @@ body {
 .redesSociais{
   display: flex;
   justify-content:space-between;
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -237,13 +236,13 @@ body {
         .livros {
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-between;
+          justify-content: center;
           margin: 0 -15px;
         }
 
         .livro {
-          width: 100%;
-          max-width: 302px;
+          width: 90%;
+          max-width: 400px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -280,10 +279,78 @@ body {
         .tags {
           display: flex;
           flex-wrap: wrap;
-          justify-content: start;
+          justify-content: center;
           margin-top: 1rem;
         }
 
         .tag {
           text-align: left;
           font-size: 14px;
+          font-weight: 500;
+          color: var(--text-tag-color);
+          padding: 5px 4px;
+          background: rgba(197, 197, 197, 0.25);
+          border-radius: 4px;
+          margin-right: 1rem;
+        }
+
+        .livros__disponiveis {
+          width: 100%;
+          height: 80px;
+          background-color: var(--text-description-color);
+          margin-top: 1rem;
+          text-align: center;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .livros__disponiveis p {
+          color: #fff;
+          font-weight: 500;
+          line-height: 24px;
+          font-size: 2em;
+        } 
+
+        .rodape {
+          width: 100%;
+          height: 104px;
+          background: linear-gradient(96.48deg, #002f52 36.3%, #326589 99.56%);
+          margin-top: 1rem;
+          text-align: center;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .rodape p {
+          color: #fff;
+          font-weight: 500;
+          line-height: 24px;
+          font-size: 1.5em ;
+        }  
+
+        .redesSociais{
+          display: flex;
+          justify-content:space-between;
+        }
+        
+        @media only screen and (min-width: 768px) {
+          .livro {
+            width: calc(50% - 30px);
+          }
+        }
+
+        @media only screen and (min-width: 992px) {
+          .livro {
+            width: calc(33.33% - 30px);
+          }
+        }
+    </style>
+</head>
+<body>
+    <!-- Conteúdo da página -->
+</body>
+</html>
